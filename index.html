@@ -1,5 +1,17 @@
 <html>
+<head>
+    <title>Obums Loading Screens</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
 <body>
-    <img src = "Untitled.png", width = 1920 height = 1080>
+    <img src = "Untitled.png", width = 1920 height = 1080 id="image">
+    
+    <script type="text/javascript">
+        let image = document.getElementById("image");
+        let images = ["Untitled.png", "Untitled2.png", "Untitled3.png", "Untitled4.png"];
+        setInterval(function(){
+            let random = Math.floor(Math.random() * 4):
+            image.src = images[random]
+        }, 800);
 </body
 </html>
